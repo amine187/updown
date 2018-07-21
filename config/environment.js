@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = function(environment) {
+module.exports = function (environment) {
   let ENV = {
     modulePrefix: 'updown',
     environment,
@@ -18,6 +18,7 @@ module.exports = function(environment) {
     },
 
     APP: {
+      API_KEY: 'ro-pz3x1zy4ae63yhygraqe'
       // Here you can pass flags/options to your application instance
       // when it is created
     }
@@ -29,6 +30,8 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
+    ENV.APP.host = 'https://gist.githubusercontent.com';
+    ENV.APP.namespace = 'Rio517/c523873cd4495456a88cac8f1860461b/raw/be008bc9ba648456c282228b463415f37b2373aa';
   }
 
   if (environment === 'test') {
@@ -45,6 +48,8 @@ module.exports = function(environment) {
 
   if (environment === 'production') {
     // here you can enable a production-specific feature
+    ENV.APP.host = 'https://updown.io';
+    ENV.APP.namespace = 'api';
   }
 
   return ENV;

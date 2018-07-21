@@ -1,0 +1,10 @@
+<h1>Check</h1>
+{{outlet}}
+
+{{#each checks as |check|}}
+    <h3>{{check.alias}}</h3>
+    <span>{{check.isHacked}}</span>
+    <span>{{check.status}}</span>
+    <span>{{format-percentage check.uptime}}</span>
+    {{!-- <span>{{format-date check.down_since}}</span> --}}
+{{/each}}
