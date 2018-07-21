@@ -6,7 +6,7 @@ export default UpDown.extend({
     pathOfType() {
         return 'checks';
     },
-    buildURL(modelName, id, snapshot, requestType, query) {
+    buildURL() {
         if (ENV.environment === 'development') {
             return `${this._super(...arguments)}.json`;
         } else {

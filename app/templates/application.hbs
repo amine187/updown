@@ -1,3 +1,32 @@
-<h1>Welcome Updown</h1>
+<!-- Navigation Bar-->
+<header id="topnav">
+    <div class="topbar-main">
+        <div class="container-fluid">
+            <!-- Logo container-->
+            <div class="logo">
+                <!-- Image Logo -->
+                <a href="/" class="logo">
+                    <img src="{{rootURL}}assets/images/suitepad.png" alt="Suitepad" height="24" class="logo-lg">
+                </a>
+            </div>
+            <!-- End Logo container-->
+            <div class="menu-extras topbar-custom">
+                <ul class="list-inline float-right mb-0">
+                    <li class="list-inline-item dropdown notification-list">
+                        <a class="nav-link dropdown-toggle waves-effect waves-light nav-user" href="#">
+                            <img src="{{rootURL}}assets/images/user.png" alt="user" class="rounded-circle">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <!-- end container -->
+    </div>
+</header>
+<!-- End Navigation Bar-->
+<div class="wrapper">
+    <div class="container-fluid">
 {{outlet}}
-
+    </div>
+</div>

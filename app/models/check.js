@@ -1,11 +1,10 @@
 import Model from 'ember-data/model';
 import DS from 'ember-data';
-import Ember from 'ember';
-import formatDate from '../helpers/format-date';
+// import Ember from 'ember';
+// import formatDate from '../helpers/format-date';
+import { computed, get } from '@ember/object';
 
 const { attr, belongsTo } = DS;
-
-const { computed, get } = Ember;
 
 export default Model.extend({
     description: belongsTo('description'),
