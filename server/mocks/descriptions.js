@@ -8,17 +8,12 @@ module.exports = function (app) {
     });
 
     router.get('/:id', function (req, res) {
-        const id = req.id || 1;
-
-        description.data = description.data[id - 1];
-        res.send(description);
-    });
-
-    router.patch('/:id', function (req, res) {
-        const id = req.id || 1;
-
-        description.data = description.data[id - 1];
-        res.send(description, 204);
+        const id = req.params.id;
+        const result = {};
+        result[id] = description[id] || null;
+        res.send(result);
+        // console.log('sdsd',result)
+        // res.send({ id: id, scontent: description[id] });
     });
 
     app.use('/api/v1/descriptions', router);

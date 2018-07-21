@@ -3,9 +3,14 @@ import ENV from 'updown/config/environment';
 
 
 export default UpDown.extend({
+    pathOfType() {
+        return 'checks';
+    },
     buildURL(modelName, id, snapshot, requestType, query) {
-        let resource = '';
-        ENV.environment === 'production' ? resource = 'checks' : resource = 'checks.json';
-        return `${this.get('host')}/${this.get('namespace')}/${resource}?api-key=${this.get('apiKey')}`;
+        if (ENV.environment === 'development') {
+            return `${this._super(...arguments)}.json`;
+        } else {
+            return `${this._super(...arguments)}?api-key=${this.get('apiKey')}`;
+        }
     },
 });
