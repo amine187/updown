@@ -7599,3 +7599,12 @@ div.hopscotch-bubble .hopscotch-bubble-arrow-container.down .hopscotch-bubble-ar
   }
 }
 /*# sourceMappingURL=style.css.map */
+
+.dataTables_filter, .dataTables_info, 
+.dataTables_length, .dataTables_paginate { 
+  display: none; 
+}
+
+.table.dataTable {
+  border-collapse:collapse
+}

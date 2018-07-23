@@ -2,9 +2,9 @@
   "name": "updown",
   "version": "0.0.0",
   "private": true,
-  "description": "Small description for updown goes here",
+  "description": "SuitePad services status",
   "license": "MIT",
-  "author": "",
+  "author": "Amine Rhouma",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -34,6 +34,7 @@
     "ember-cli-sri": "^2.1.0",
     "ember-cli-uglify": "^2.0.0",
     "ember-data": "~3.2.0",
+    "ember-datatables": "^0.1.0",
     "ember-export-application-global": "^2.0.0",
     "ember-load-initializers": "^1.1.0",
     "ember-maybe-import-regenerator": "^0.1.6",
@@ -46,5 +47,6 @@
   },
   "engines": {
     "node": "6.* || 8.* || >= 10.*"
-  }
+  },
+  "dependencies": {}
 }

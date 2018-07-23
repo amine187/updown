@@ -1,0 +1,8 @@
+{
+  "name": "updown",
+  "dependencies": {
+    "datatables.net": "^1.10.19",
+    "datatables.net-dt": "^3.2.2",
+    "datatables.net-plugins": "^1.10.19"
+  }
+}
